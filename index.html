@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Safecast Measurement Count</title>
+
+    <script type="text/javascript" src="safecast_measurement_count.js"></script>
+    <script type="text/javascript">
+      //If you're running this script on a site other than a *.safecast.org domain, you'll need to add your api key here:
+      //safecast.api_key = '[your api key here]';
+    </script>
+  </head>
+
+  <body onLoad="safecast.getMeasurementCount('count')">
+    <h1>Safecast Measurement Count</h1>
+
+    <div>
+      Include 'safecast_measurement_count.js' and create a div with an id of 'safecast_measurement_count'.  When the page is loaded, the javascript will insert the measurement count into the div.
+      <br />
+      <br />
+      This should work with both div's and span's.
+    </div>
+
+    <div id="count">
+    </div>
+  </body>
+</html>
